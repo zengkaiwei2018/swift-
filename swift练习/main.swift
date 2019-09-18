@@ -1,9 +1,7 @@
- var array:[Int] = [1,2,3,4,5,10,46,13,6,7,9]
- var max = 0
+ var array = [Int]()
+ array.append(10)
+ array.append(20)
+ array += [30]
  for item in array{
-    if(item > max){
-        max = item
-    }
-    
+    print(item)
  }
- print(max)
