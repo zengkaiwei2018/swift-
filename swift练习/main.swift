@@ -1,11 +1,4 @@
-var [array]:[Int] = [3,5,8,7,10,33,100]
-var first = array[0]
-for(index,item) in array.enmerated(){
-    if(index < array.count - 1){
-        array = array[index + 1]
-    }
+func sum(i1:Int,i2:Int) -> Int{
+    return i1 + i2
 }
-array[array.count - 1] = first
-for item in array{
-    print(item)
-}
+print(sum(i1:2,i2:4))
