@@ -1,14 +1,11 @@
-var strs:[String] = ["3","a","8","haha","100","hello"]
-for(index,item) in strs.enumerated(){
-    if  index < strs.count / 2
-    {
-        var temp = ""
-        temp = strs[index]
-        strs[index] = strs[strs.count - index - 1]
-        strs[strs.count - index - 1]
+var [array]:[Int] = [3,5,8,7,10,33,100]
+var first = array[0]
+for(index,item) in array.enmerated(){
+    if(index < array.count - 1){
+        array = array[index + 1]
     }
 }
-
-for item in strs{
-    
+array[array.count - 1] = first
+for item in array{
+    print(item)
 }
